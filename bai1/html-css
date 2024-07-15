@@ -1,0 +1,96 @@
+HTML - Hyper Text Markup Language - Ngôn ngữ đánh dấu siêu văn bản
+    - html không phải nn lập trình, html không xử lý bài toán, đơn thuần là thay đổi định dạng hiển thị
+    của văn bản theo mong muốn của người dùng
+    - trong html, cta sử dụng tập hợp các thẻ (tag) để xuất văn bản theo nhiều định dạng mong muốn
+    - html thường được lựa chọn để xây dựng giao diện trang web, hỗ trợ tương tác người 
+
+Hiện này, thông dụng nhất là HTML5
+Cách tạo HTML trên VSC:
+    - tạo file, đặt tên + đuôi file là .html
+    - gõ: html:5 => enter
+Chạy html trên VSC: 
+    - cài đặt thêm extension: LiveServer
+
+1 vài nhóm thẻ trong html: trong các thẻ HTML sẽ có thể 1 khái niệm được gọi là thuộc tính của thẻ
+    - các thuộc tính đặc trưng:
+        - id: định danh duy nhất cho thẻ html
+        - class: gom nhóm các thẻ có chung hoặc gần giống định dạng để quy định
+        - type: quy định loại của thẻ
+        - name: định danh tên giá trị gửi về backend
+        - style: dùng chưa mã css trực tiếp
+        - for: tác động đến 1 thẻ khác (label)
+        - src: dùng để gắn link cho 1 số thẻ
+        - alt: phần text hiển thị thẻ src bị lỗi
+        - href: dùng để gắn link cho 1 số thẻ
+        - hidden: thuộc tính ẩn thẻ 
+        - disable: thuộc tính hủy giá trị thẻ
+        - readonly: thuộc tính quy định thẻ không được thay đổi
+        - required: thuộc tính quy định thẻ bắt buộc nhập
+    - thẻ tạo trang web
+        - doctype: quy định tài liệu html
+        - html: đánh dấu vùng chữa mã html
+        - title: tên website
+        - meta: quy định về cái đặt và thiết bị
+        - style => viết mã css trực tiếp
+        - script => gắn link js, thư viện
+        - link => gắn link css
+        - body: chứa mã nguồn trang web
+    - thẻ phân vùng khu vực trang web
+        - div: gom nhóm các thẻ thành phần để tác động chung
+        - section: vùng dọc
+        - nav: thanh menu (ngang)
+        - header: phần đầu
+        - footer: phần chân
+    - bảng: table - quy định vùng của bảng
+        - tr: tạo thành các hàng trong bảng
+        - th: tạo thành các ô trong bảng; nội dung ô in đậm căn giữa
+        - td: tạo thành các ô trong bảng; nội dung ô bình thường
+    - các thẻ thông dụng
+        - p: văn bản
+        - img: ảnh
+        - video: video
+        - audio: âm thanh
+        - pre: giữ định dạng văn bản
+        - br: xuống dòng
+        - hr: tạo đường ngang
+        - h1->6: thẻ tiêu đề; in đậm và từ 1 -> 6 thì kích thước giảm dần; h4 to bằng thẻ p
+        - a: gắn siêu liên kết, gắn link
+        - button: tạo nút bấm
+        - select: tạo ra các lựa chọn dropdown
+            - select: giới hạn vùng của thẻ, quy định giá trị của thẻ khi lựa chọn
+            - option: các lực chọn giá trị
+        - thẻ danh sách
+            - ol: danh sách có thứ tự; 1,2,3 hoặc a,b,c hoặc I,II,III
+            - ul: danh scah không có thứ tự; hiển thị chấm tròn, vuông,...
+            - li: thẻ thành phần của 2 thẻ trên
+        - form: tạo biể mẫu
+        - textarea: ghi text số lượng lớn; tùy chỉnh được kích thước
+        - label: gắn nhãn; hỗ trợ người dùng dễ dang focus vào input
+        - input: thẻ để thu thập dữ liệu người dùng nhập. có nhiều type (loại) khác nhau
+            - text: chữ
+            - number: số
+            - date: ngày
+            - datetime: ngày giờ
+            - password: mã hóa ký tự
+            - range: vũng giá trị kéo
+            - checkbox: tích chọn nhiều đáp án
+            - radio: tích chọn 1 đáp án
+            - button: tạo nút bấm
+            - reset: clear dữ liệu form
+            - submit: gửi dữ liệu form
+            - file: chọn file gửi
+            - week: chọn giá trị tuần trong năm
+            - month: chọn giá trị tháng trong năm
+            - search: hỗ trợ tìm kiếm
+
+CSS - Cascading Style Stylesheet - hỗ trợ thay đổi định dạng thẻ HTML để tăng UI cho trang web
+    - style: thẻ chứa mã css để tác động đến thẻ html
+    - selector (bộ chọn):
+        - tagname: tên thẻ html
+        - id: định dạng thẻ html - sử dung dấu thăng để quy định
+        - class: nhóm thẻ html tương ứng - sử dụng dấu chấm để quy định
+    - các thuộc tính CSS sẽ tồn tại dạng key - value
+    - có 3 cách để gắn CSS vào HTML
+        - inline: viết trực tiếp lên thẻ (không khuyến khích, tác động mạnh nhất)
+        - internal: viết mã CSS trong cặp thẻ style ở phần header
+        - external: viết mã CSS trong file có đuôi .css => gắn link vào trang html thông qua thẻ link

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullname {
+            width: 110px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .blue {
+            color: rgb(54, 54, 235);
+        }
+
+        h3 {
+            background-color: rgb(118, 239, 239);
+            padding: 4px;
+            margin: 5px 5px 5px 0px;
+        }
+
+        form {
+            background-color: rgb(233, 233, 138);
+            width: 570px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <!-- thuộc tính colspan: dùng trong table, gộp 2 hay nhiều ô trên 1 hàng thành 1 ô  -->
+                <!-- thuộc tính rowspan: dùng trong table, gộp 2 hay nhiều ô trên 1 cột thành 1 ô  -->
+                <td colspan="2"><h3 class="blue">ĐĂNG KÝ HỌC VIÊN</h3></td>
+            </tr>
+            <tr>
+                <td id="fullname" class="blue">Họ và tên</td>
+                <!-- thuộc tính size: dùng thẻ input, chỉnh kích thước ngang của input tương ứng  -->
+                <td><input type="text" size="35"></td>
+            </tr>
+            <tr>
+                <td class="blue">Ngày sinh</td>
+                <td><input type="date" size="15"></td>
+            </tr>
+            <tr>
+                <td class="blue">Giới tính</td>
+                <td>
+                    <input type="radio" name="gender"> Nam
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Địa chỉ</td>
+                <!-- thuộc tính cols: dùng trong textarea, quy định kích thước ngang  -->
+                <!-- thuộc tính rows: dùng trong textarea, quy định kích thước dọc  -->
+                <td><textarea rows="4" cols="26"></textarea></td>
+            </tr>
+            <tr>
+                <td class="blue">Lớp</td>
+                <td>
+                    <select>
+                        <option value="">--- Chọn lớp ---</option>
+                        <option value="6">Lớp 6</option>
+                        <option value="7">Lớp 7</option>
+                        <option value="8">Lớp 8</option>
+                        <option value="9">Lớp 9</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td class="blue">Điện thoại</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>Đăng ký</button>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
