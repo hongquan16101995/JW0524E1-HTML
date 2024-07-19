@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 110px;
+        }
+
+        label {
+            color: orange;
+        }
+
+        h3 {
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .blue {
+            color: blue;
+            text-align: right;
+        }
+
+        /* table {
+            border: 15px solid aqua;
+        } */
+
+        table {
+            background-color: white;
+        }
+
+        div {
+            width: 450px;
+            padding: 15px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="4"><h3>SỞ THÍCH CỦA BẠN</h3></td>
+            </tr>
+            <tr>
+                <td class="blue">Họ và tên</td>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="blue">Email</td>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="blue">Sở thích</td>
+                <td><input type="checkbox"> <label>Thể thao</label></td>
+                <td><input type="checkbox"> <label>Âm nhạc</label></td>
+                <td><input type="checkbox"> <label>Đọc sách</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox"> <label>Lưới web</label></td>
+                <td><input type="checkbox"> <label>Chơi game</label></td>
+                <td><input type="checkbox"> <label>Điện ảnh</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox"> <label>Du lịch</label></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <button>Gửi thông tin</button>
+                    <button>Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

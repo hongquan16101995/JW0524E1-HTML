@@ -1,0 +1,8 @@
+Box model: là khái niệm về các kích thước, định dạng xoay quanh 1 element trong HTML được tác động bởi CSS
+Box model sẽ có 4 chỉ số chính:
+    - content: nội dụng thẻ thẻ hay thành phần HTML tương ứng
+    - padding: khoảng cách từ border (viền thẻ) đến content
+    - border: viền của thành phần HTML
+    - margin: khoảng cách giữa 2 thành phần HTML liền kề
+Các chỉ số này sẽ giúp ltv xử lý về kích thước, vị trí và định dạng của thẻ HTML
+Mọi thẻ/thành phần HTML đều có 1 box model riêng

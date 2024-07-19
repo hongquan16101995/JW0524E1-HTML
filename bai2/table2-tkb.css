@@ -1,0 +1,40 @@
+#table1 {
+    width: 700px;
+    margin: auto;
+    color: blue;
+}
+
+#table2 {
+    width: 800px;
+    margin: auto;
+}
+
+#table2 tr, #table2 td, #table2 th, #table2  {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+#table2 td {
+    padding: 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#yellow2 {
+    background-color: rgb(213, 133, 34);
+}
+
+.center {
+    text-align: center;
+}
