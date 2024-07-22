@@ -1,0 +1,84 @@
+- JavaScript: ES6 
+    - JS LÀ 1 NN LẬP TRÌNH DỄ DÃI
+    - là một NN lập trình
+    - hỗ trợ rất tốt cho giao diện trang web, khi kết hợp HTML
+    - là một NN thông dịch => browser hỗ trợ thông tin JS
+    => Chrome, Cốc cốc, Firefox, MsEdge,.. => tất các trình duyệt này đều hỗ trợ thông dịch JS
+
+- Static web và Dynamic web
+    - static web là website tĩnh, thuần HTML-CSS, không có nhiều tương tác với người dùng, không cần sử dụng server
+    - dynamic web là các website có kết nối, hoạt động dựa trên tương tác của người dùng
+
+- 1 số khái niệm trong JS
+    - Biến: tên gọi cho vùng nhớ chứa dữ liệu
+        - let: sử dụng để khai báo biến cục bộ (local), giới hạn sử dụng trong block khai báo
+            - let không cho phép khai báo lại biến trong phạm vị block đó
+            - khi block kết thúc thì biến let cũng sẽ biến mất khỏi bộ nhớ
+        - var: sử dụng để khai báo biến toàn cụ (global), giới hạn trong phần script
+            - var cho phép khai báo lại biến (ghi đè giá trị trước của biến)
+            - var sẽ tồn tại trong toàn bộ chương trình Js nó khai báo => chỉ mất khi chương trình kết thúc
+        - const: khai báo hằng số, giá trị của biến sẽ không đổi sau khi khai báo 
+        * Khái niệm về block: phần code giới hạn trong ngoặc nhọn {}
+    - KDL: định dạng cho giá trị của biến
+        - Number
+        - Chuỗi => String và Char
+        - Boolean
+        - Undefined => không xác định
+        - null => check kdl null-> kết quả sẽ là Object
+        - Symbol()
+        - Object
+    - Toán tử
+        - Số học: + - * / %
+        - So sánh: "> < >= <= == === != !=="
+        - Gán: = += -= *= /= %=
+        - Cộng chuỗi: + (điều kiện 1 trong 2 vế là chuỗi)
+        - Tăng giảm: ++ -- (tiền tố - hậu tố)
+        - Logic: "&& || !"
+        - typeof: toán tử kiểm tra định dạng kiểu dữ liệu của biến
+    - CLĐK: không thay đổi so với Java
+        - câu lệnh if
+        - câu lệnh switch, từ khóa break
+        - Lưu ý về điều kiện trong Js: => AUTO CONVERT dữ liệu trong JS
+            - các giá trị: 0, "", null, undefined sẽ tự động chuyển thành => false
+            - các giá trị còn lại sẽ tự động chuyển thành true
+            => các số khác 0, các chuỗi khác rỗng sẽ có giá trị là true trong câu điều kiện
+    - CLL: không thay đổi so với Java
+        - câu lệnh for
+        - câu lệnh while
+        - câu lệnh do...while
+        - từ khóa break và continue
+        => không cần sử dụng forEach trong JS
+        => trong Js có 2 for đặc biệt dùng riêng cho mảng: for in và for of
+    - Mảng:
+        - Mảng là gì?
+            - là tập hợp các ô nhớ liền kề nhau chứa dữ liệu
+            - mảng sẽ chứa nhiều giá trị thay vì 1 giá trị
+            - các giá trị của mảng được gọi là phần tử
+            - vị trí các phần tử trong mảng được gọi là index
+                - index sẽ bắt đầu từ số 0
+            - tổng số các phần tử trong mảng được gọi là length
+                - index của phần từ cuối cùng là length-1
+            - mảng trong Js sẽ không giới hạn số lượng phần từ
+            và cho phép thay đổi số lượng phần tử tùy ý
+            - mảng trong Js có thể chứa tất cả các kiểu dữ liệu hiện có của JS
+            - mảng trong Js cung cấp rất nhiều hàm có sẵn để ltv sử dụng => buổi tiếp theo
+        - Khai báo mảng
+            - c1: sử dụng từ khóa let hoặc var hoặc const tùy trường hợp
+                let arr = [1,2,3,4,5]
+            - c2: sử dụng từ khóa new và lớp Array
+                let arr = new Array[5] => khai báo số lượng phần tử sẽ có của mảng
+                let arr1 = new Array[1,2,3,4,5] => khai báo theo phần tử cụ thể 
+        - Lưu ý khi sử dụng mảng trong Js
+    - Nhúng Js và HTML
+        - tương tự như CSS
+            - inline: viết trực tiếp mã Js trong thẻ HTML => cực kỳ hạn chế
+            - internal: viết mã Js trong cặp thẻ <script>, ở cuối body
+            - external: viết mã Js trong file .js và dẫn link bằng thẻ <script>
+    - Đối tượng trong JS
+
+
+=> Tìm hiểu buổi sau:
+    - Các hàm có sẵn của mảng: tên hàm, cách dùng, tác dụng
+    - Khái niệm hàm trong Js, 1 số cấu trúc hàm cơ bản
+    - Phân biệt lại tham số và đối số
+    - Input từ HTML vào Js và output từ JS ra HTML
