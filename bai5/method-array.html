@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // push: thêm 1 phần tử vào mảng, ở cuối mảng
+    // pop: cắt 1 phần tử khỏi mảng, ở cuối mảng
+    let arr1 = [1,2,3]
+    console.log("Pop: " + arr1.pop())
+    arr1.push(100)
+    console.log(arr1);
+    console.log("----------------------")
+
+    // shift: cắt 1 phần tử khỏi mảng, ở đầu mảng
+    // unshift: thêm 1 phần tử vào mảng, ở đầu mảng
+    let arr2 = [1,2,3]
+    console.log("Shift: " + arr2.shift())
+    arr2.unshift(100)
+    console.log(arr2);
+    console.log("----------------------")
+
+    // let arr = [1,2,3,4,5,3,6,7,3,8,5]
+    // indexOf: trả về giá trị index của phần tử đầu tiên tìm thấy trong mảng
+    // lastIndexOf: trả về giá trị index của phần tử cuối cùng tìm thấy trong mảng
+    // nếu phần tử đó không tồn tại trong mảng, trả về giá trị là -1 
+    let arr3 = [1,2,3,4,5,3,6,7,3,8,5]
+    console.log("Index of: " + arr3.indexOf(3));
+    console.log("Last index of: " + arr3.lastIndexOf(3));
+    console.log("----------------------")
+    
+    // concat: nối 2 mảng bất kỳ thành 1 mảng mới
+    let arr4 = [1,2,3]
+    let arr5 = [11,22,33]
+    console.log("Concat: " + arr4.concat(arr5));
+    console.log(arr4);
+    arr4 = arr4.concat(arr5)
+    console.log(arr4);
+    console.log("----------------------")
+    
+    // reverse: đảo ngược vị trí các phần tử trong mảng
+    let arr6 = [1,2,3,4,5,6]
+    console.log("Before: " + arr6);
+    arr6.reverse()
+    console.log("After: " + arr6);
+    console.log("----------------------")
+
+    // join: nối các phần tử trong mảng thành chuỗi theo điều kiện mong muốn
+    let arr7 = [1,2,3,4,5]
+    console.log(arr7.join(""));
+    console.log(arr7.join("-"));
+    console.log(arr7.join("a"));
+    console.log(arr7.join("*"));
+    console.log(arr7.toString());
+    console.log("----------------------")
+
+    // map, filter
+    let arr = [1,2,3]
+    let arrMap = arr.map((item) => {
+        return item * 2
+    })
+    console.log(arr.filter(function(item) {
+        return item % 2 != 0
+    }));
+    console.log(arrMap);
+    console.log(arr);
+    console.log("----------------------")
+
+    // splice: cắt 1 phần của mảng thành 1 mảng con mới; ảnh hưởng đến mảng gốc
+    // bao gồm 3 tham số trở lên
+    // tham số 1: vị trí bắt đầu cắt
+    // tham số 2: số lượng phần tử sẽ cắt
+    // tham số 3 trở lên: giá trị thêm vào nếu muốn
+    // Khởi tạo mảng ban đầu 
+    let arr8 = [1, 2, 3, 4, 5]; 
+    // Xóa 1 phần tử từ chỉ số 2 và thêm 100 
+    console.log("Mảng được cắt splice: " + arr8.splice(2, 1, 100)); 
+    // Kết quả sau khi sử dụng splice console.log('Mảng sau khi splice:', arr8); 
+    console.log('Mảng sau khi splice:', arr8);
+    // Kết quả: Mảng sau khi splice: [1, 2, 100, 4, 5]
+    console.log("----------------------")
+
+    // slice: cắt 1 phần của mảng thành 1 mảng con mới; không ảnh hưởng đến mảng gốc
+    // bao gồm 2 tham số
+    // tham số 1: vị trí bắt đầu cắt
+    // tham số 2: vị trí kết thúc cắt + 1
+    // Khởi tạo mảng ban đầu 
+    let arr9 = [1, 2, 3, 4, 5]; 
+    // Xóa 1 phần tử từ chỉ số 2 và thêm 100 
+    console.log("Mảng được cắt slice: " + arr9.slice(2, 4)); 
+    // Kết quả sau khi sử dụng slice console.log('Mảng sau khi slice:', arr9); 
+    console.log('Mảng sau khi slice:', arr9);
+    // Kết quả: Mảng sau khi slice: [1, 2, 3, 4, 5]
+    console.log("----------------------")
+</script>
+</html>

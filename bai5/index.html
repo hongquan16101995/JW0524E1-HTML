@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" name="abc">
+    <button onclick="m1()">Click me</button>
+    <button onclick="m2()">Click gọi write</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+<script>
+    // input Js
+    // prompt: dạng hộp thoại dialogbox có chứa ô input để nhập liệu
+    // tham số 1: câu dẫn cho hộp thoại
+    // tham số 2: giá trị mặc định của prompt
+    // let value1 = prompt("Nhập gì đó","Itplus")
+    // console.log(value1);
+
+    // input HTML + sự kiện
+    function m1() {
+        let value2 = document.getElementById("input").value 
+        console.log(value2)
+    }
+
+    // output Js
+    // alert: dạng hộp thoại dialogbox hiện thông tin. Tham số là giá trị cần hiển thị
+    // alert("Xin chào Việt Nam")
+
+    // console.log: hàm hiển thị giá trị trong phần console của trình duyệt
+    // thường dùng để check log
+    // console.log("Giá trị cần check để ở đây")
+
+    // document.write(): hành động xóa hết tất cả dữ liệu hiện có trên màn hình
+    // và thay thế phần dữ liệu bằng nội dùng mà LTV thiết lập
+    function m2() {
+        document.write("<h1>HelloWorld Việt Nam</h1>")
+    }
+
+    // document.getElement
+        // document.getElementById("mã id"): lấy thẻ HTML theo id được chọn (thẻ HTML <=> 1 thành phần DOM)
+        // document.getElementsByTagName("tên thẻ cần lấy"): lấy 1 list thẻ HTML theo tên thẻ được chọn
+        // (list thẻ HTML <=> list NodeHTML)
+        // document.getElementsByName("tên thuộc tính name"): lấy 1 list thẻ HTML theo tên được chọn
+        // document.getElementsByClassName("tên thuộc tính class"): lấy 1 list thẻ HTML theo tên class được chọn
+    // document.getElementById("mã id").innerText = "giá trị cần hiển thị"
+        // innerText sẽ in giá trị theo định dạng text như đã nhập
+    // document.getElementById("mã id").innerHTML = "giá trị cần hiển thị"
+        // innerHTML sẽ in giá trị theo định dạng HTML như đã nhập
+    document.getElementById("p1").innerText = "Đây là innerText: <i><h2>HelloWorld</h2></i>"
+    document.getElementById("p2").innerHTML = "Đây là innerHTML: <i><h2>HelloWorld</h2></i>"
+</script>
+</html>

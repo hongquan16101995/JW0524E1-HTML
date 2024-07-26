@@ -82,3 +82,10 @@
     - Khái niệm hàm trong Js, 1 số cấu trúc hàm cơ bản
     - Phân biệt lại tham số và đối số
     - Input từ HTML vào Js và output từ JS ra HTML
+
+
+    1. Viết chương trình xác định 1 số có phải SNT hay không?
+    2. Cho mảng như sau:
+        let arr = [1,4,6,3,7,2]
+        Tìm số lớn nhất trong mảng
+        => Truy xuất phần từ trong mảng: arr[2] => 6

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+</body>
+<script>
+    let number = prompt("Nhập vào 1 số: ")
+    if (number < 2) {
+        document.getElementById("result").innerHTML = ("<h1>" + number + " không phải số nguyên tố</h1>")
+    } else {
+        let check = true
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                check = false
+                alert(number + " không phải số nguyên tố")
+                break
+            }
+        }
+        if (check) {
+            alert(number + " là số nguyên tố")
+        }
+    }
+</script>
+</html>
