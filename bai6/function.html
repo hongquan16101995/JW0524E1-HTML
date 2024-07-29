@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="createArray()">Create</button>
+    <button onclick="searchByValue()">Click</button>
+</body>
+<script>
+    // Hàm - fuction: tương tự như khái niệm method trong Object của Java
+    // là tập hợp của 1 số câu lệnh nhằm thực thi 1 nhiệm vụ nào đó
+    // hàm với ý nghĩa
+        // chia để trị: giúp phân nhỏ bài toán lớn thành từng bước và giải quyết từng bước đó
+        // tái sử dụng: cho phép sử dụng lại 1 đoạn mã code mà không cần viết, 
+                    //thậm chí còn cho phép thay đổi kết quả tùy theo điều kiện đầu vào
+    // Cấu trúc của hàm:
+        // function <tên hàm> (<tham số nếu có>) {
+                // các câu lệnh
+        // }
+        // từ khóa function: bắt buộc phải có, trừ function arrow
+        // tên hàm: đại diện cho nhiệm vụ hoặc ý nghĩa của hàm, được sử dụng để gọi hàm sau này, trừ fn arrow và fn ẩn danh
+        // (): ký hiệu đánh dấu hàm, bắt buộc có
+        // {}: ký hiệu giới hạn phạm vi hàm, bắt buộc có
+        // tham số: có hay không tùy yêu cầu bài toán => không phụ thuộc kiểu dữ liệu
+                // không giới hạn về số lượng, tuy nhiên khuyến khích: 3-5 tham số
+        // câu lệnh: có hay không tùy yêu cầu bài toán
+        // return: trả về kết quả của hàm => không phụ thuộc kiểu dữ liệu
+
+
+        // 4 loại hàm đơn giản:
+            // - hàm không tham số, không trả về
+            // - hàm không tham số, có trả về
+            // - hàm có tham số, không trả về
+            // - hàm có tham số, có trả về
+
+        // Yêu cầu:
+        // khai báo 1 mảng có 10 phần tử
+        // Các phần tử của mảng được nhập vào từ bàn phím
+        // Tìm và hiển thị phần tử có giá trị lớn nhất. Đồng thời đếm xem phần tử đó xuất hiện bn lần trong mảng
+        // Tìm số lớn thứ 2 trong mảng
+
+        function createArray() {
+            let length = +prompt("Nhập vào số lượng phần tử bạn muốn: ")
+            let arr = new Array(length)
+            for(let i = 0; i < arr.length; i++) {
+                arr[i] = +prompt("Nhập vào phần tử thứ " + (i + 1) + ": ")
+            }
+            console.log(arr);
+            return arr
+        }
+
+        function searchByValue() {
+            let arr = createArray()
+            let value = +prompt("Nhập vào giá trị phần tử bạn muốn tìm: ")
+            let max = arr[0]
+            let count = 1
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]
+                    count = 1
+                    continue
+                }
+                if (arr[i] == max) {
+                    count++
+                }
+            }
+            console.log("Mảng là: " + arr);
+            console.log("Giá trị lớn nhất của mảng là: " + max);
+            console.log("Số lần xuất hiện của phần tử lớn nhất là: " + count);
+        }
+</script>
+</html>

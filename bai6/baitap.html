@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <select id="select">
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <option value="4">D</option>
+        <option value="5">E</option>
+    </select>
+    <button onclick="m1()">Click me</button>
+    <!-- để gọi đến Js thì cần sử dụng sự kiện trên HTML và call đến function của Js -->
+</body>
+<script>
+    function m1() {
+        let inputValue = document.getElementById("input").value 
+        let selectElment = document.getElementById("select")
+        let listOption = selectElment.options
+        // phương thức đặt cờ
+        let flag = false 
+        for (let i = 0; i < listOption.length; i++) {
+            if (listOption[i].value == inputValue) {
+                selectElment.style.display = 'none'
+                flag = false
+                break
+            } else {
+                flag = true
+            }
+        }
+        if (flag) {
+            alert("Không tìm thấy")
+        }
+    }
+</script>
+</html>

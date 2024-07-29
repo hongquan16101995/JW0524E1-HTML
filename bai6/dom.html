@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" value="abcd">
+    <input type="text" id="input2" value="123">
+</body>
+<script>
+    // DOM - Document Objet Model: mô hình các đối tượng trong trang HTML
+    // mỗi thẻ thành phần trong html sẽ được coi là 1 DOM. Đồng nghĩa với việc mỗi thẻ là 1 Object
+    // Object là đối tượng, thể hiện cụ thể về giá trị của lớp cho 1 trường hợp nhất định
+    // => mỗi thẻ sẽ có các thuộc tính và phương thức riêng của nó
+    // Example: thẻ input sẽ chứa 1 số thuộc tính: hidden, readonly, value, id, class
+    // focus(): trỏ chuột sẽ tự động chỉ vào input được chỉ định
+    console.log(document.getElementById("input1").value)
+    console.log(document.getElementById("input2").value)
+    document.getElementById("input1").focus()
+
+    // Object của DOM HTML có tên là NodeHTML
+    // ListNodeHTML <=> 1 mảng các Node, có thể truy xuất thông qua vị trí
+    console.log(document.getElementById("input1"))
+    console.log(document.getElementsByTagName("input"))
+
+    document.getElementById("input2").style.border = '5px solid'
+
+    // Yêu cầu bài toán:
+    // 1. Tạo 1 input
+    // 2. Tạo 1 select box và fill vào đó 5 giá trị theo mong muốn
+    // 3. Tạo button chứa lệnh gọi đến Js và có thể tác động đến 2 thành phàn HTML ở trên
+        // 3.1. Nếu giá trị nhập ở input có trong bộ giá trị của select => ẩn select đi
+        // 3.2. Nếu giá trị nhập ở input không có trong bộ giá trị của select => hiện thông báo: Không tìm thấy
+    
+</script>
+</html>
