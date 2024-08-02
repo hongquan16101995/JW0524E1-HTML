@@ -1,0 +1,20 @@
+Bootstrap: là thư viện CSS
+    => ltv thiết kế ra thư viện đã viết sẵn 1 số bộ mã CSS và gắn nó vào trong các class tương ứng
+    => người dùng chỉ cần dẫn link hoặc import thư viên và sử dụng các class gắn vào các phần tử tương ứng
+    => html sẽ tự động sử dụng bộ mã CSS đã được build vào thành phần của mình
+
+có 2 phương pháp để gắn Bootstrap vào html
+    - sử dụng link liên kết CDN - Content Delivery Network => nếu không có kết nối mạng thì không sử dụng được
+    - import thư viện offline
+
+RWD - Responsive Web Design: tư duy thiết kế giao diện trang web thích ứng trên nhiều thiết bị
+    Khi website được thiết kế theo tư duy này, nó có khả năng thích ứng trên pc, ipad, smartphone và nhiều thiết bị khác
+    Không bị giới hạn bởi kích thước màn hình
+Grid View: hỗ trợ chia màn hình thành 12 cột và chỉnh kích thước qua 12 cột đó
+    Bootstrap chia thành 6 loại màn hình:
+        - xs: extra small
+        - sm: small 
+        - md: medium
+        - lg: lagre
+        - xl: extra lagre
+        - xxl: extra extra lagre
