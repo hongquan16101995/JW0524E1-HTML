@@ -1,0 +1,48 @@
+table {
+    width: 500px;
+}
+
+#total {
+    color: red;
+    font-weight: bold;
+    float: right;
+}
+
+#title {
+    font-weight: bold;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(211, 219, 226);
+}
+
+table, tr, td {
+    border-collapse: collapse;
+}
+
+button {
+    background-color: rgb(40, 170, 40);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 13px 8px 13px;
+}
+
+input {
+    height: 25px;
+    border-radius: 4px;
+    border: 0.2px solid;
+}
+
+#div-add {
+    border: none;
+    border-radius: 7px;
+    width: 250px;
+    padding: 20px 40px 20px 40px;
+    background-color: rgb(211, 219, 226);
+}
