@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p class="index"></p>
+</body>
+<!-- jQuery: là thư viện của ngôn ngữ Js
+Khá là phỏ biến trong việc hỗ trợ truy xuất phần tử DOM HTML và giúp mã Js trở nên ngắn gọn hơn
+Ngoài ra, nó cũng cũng cấp 1 số hàm hỗ trợ việc gọi/xử lý API
+Tuy nhiên thì thư viện này có phần thụt lùi so với thị trường It nói chung do rất lâu rồi không được cập nhật
+
+Import jQuery có 2 cách:
+    - gắn thư viện offline
+    - sử dụng link CDN -->
+<script>
+    document.getElementById("demo").innerHTML = "HelloWorld"
+    $("#demo1").html("HelloWorld Itplus")
+    $(".index").html("Demo")
+
+    // document.getElementById("demo1").style.display = 'none'
+    $("#demo1").hide()
+
+    // // DOM
+    // document.getElementById("demo").setAttribute("onclick", "m1()")
+    // function m1() {
+    //     alert("Xin chào")
+    // }
+
+    // jQuery
+    $("#demo").on("click", function() {
+        alert("Xin chào")
+    })
+
+
+    let name = "Quang"
+    let age = 20
+    console.log("Hello: ${name}"); // Hello: ${name}
+    console.log(`Hello: ${name} ${age}`); // Hello: Quang ``
+</script>
+</html>
